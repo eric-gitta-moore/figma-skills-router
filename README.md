@@ -4,15 +4,19 @@
 
 它的目标不是重写 Figma 官方 skills，而是在保留官方内容的前提下，对外只暴露一个统一入口 skill：`figma-skills-router`。调用方只需要先加载这一个 router，再由它按任务目标分发到对应的参考 guide。
 
+同时，这个仓库也收录了一个通用方法论 skill：`skill-router-creator`，用于沉淀“如何把多个 skills 聚合成一个单入口 router skill”的实践方式。
+
 ## 项目结构
 
 ```text
 figma-skills-router/
 ├── figma-skills/                  # Figma 官方上游仓库，使用 submodule 引入
 └── skills/
-    └── figma-skills-router/
-        ├── SKILLS.md              # 对外暴露的唯一 skill 入口
-        └── references/            # 官方 skills 的镜像参考资料
+    ├── figma-skills-router/
+    │   ├── SKILLS.md              # 面向 Figma 工作流的 router skill
+    │   └── references/            # 官方 skills 的镜像参考资料
+    └── skill-router-creator/
+        └── SKILLS.md              # 通用的 skill router 设计方法论
 ```
 
 ### 目录说明
@@ -48,6 +52,13 @@ figma-skills-router/
   - 生成项目级的 Figma 实现规范或规则文档。
 - `figma-create-new-file`
   - 创建新的 Figma 或 FigJam 空白文件。
+
+## 当前收录的 Skills
+
+- `figma-skills-router`
+  - 面向 Figma 工作流的单入口 router skill。
+- `skill-router-creator`
+  - 通用的 router skill 设计方法论，用于聚合多个已有 skills。
 
 ## 设计原则
 
