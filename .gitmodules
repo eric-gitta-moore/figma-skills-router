@@ -1,0 +1,3 @@
+[submodule "figma-skills"]
+	path = figma-skills
+	url = https://github.com/figma/mcp-server-guide
