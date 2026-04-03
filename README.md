@@ -13,10 +13,10 @@ figma-skills-router/
 ├── figma-skills/                  # Figma 官方上游仓库，使用 submodule 引入
 └── skills/
     ├── figma-skills-router/
-    │   ├── SKILLS.md              # 面向 Figma 工作流的 router skill
+    │   ├── SKILL.md               # 面向 Figma 工作流的 router skill
     │   └── references/            # 官方 skills 的镜像参考资料
     └── skill-router-creator/
-        └── SKILLS.md              # 通用的 skill router 设计方法论
+        └── SKILL.md               # 通用的 skill router 设计方法论
 ```
 
 ### 目录说明
@@ -25,7 +25,7 @@ figma-skills-router/
   - 上游 Figma 官方 skills 来源目录。
   - 保持只读，尽量不要在这个目录里做定制修改。
 
-- `skills/figma-skills-router/SKILLS.md`
+- `skills/figma-skills-router/SKILL.md`
   - 本仓库真正对外提供的 skill。
   - 负责根据用户最终想要的产出物进行分流。
 
@@ -82,7 +82,7 @@ figma-skills-router/
 
 如果你是这个仓库的使用方，直接从下面这个文件开始：
 
-- [skills/figma-skills-router/SKILLS.md](./skills/figma-skills-router/SKILLS.md)
+- [skills/figma-skills-router/SKILL.md](./skills/figma-skills-router/SKILL.md)
 
 它会根据任务类型，把请求路由到最合适的参考 guide。
 
